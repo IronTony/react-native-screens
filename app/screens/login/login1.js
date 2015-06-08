@@ -63,7 +63,8 @@ var Login1 = React.createClass({
 
 var styles = StyleSheet.create({
     container: {
-
+      flexDirection: 'column',
+      flex: 1
     },
     bg: {
         position: 'absolute',
@@ -75,7 +76,7 @@ var styles = StyleSheet.create({
     header: {
         justifyContent: 'center',
         alignItems: 'center',
-        height: (windowSize.height * .5)
+        flex: .5
     },
     mark: {
         width: 150,
@@ -89,12 +90,12 @@ var styles = StyleSheet.create({
     signup: {
       justifyContent: 'center',
       alignItems: 'center',
-      height: (windowSize.height * .15)
+      flex: .15
     },
     inputs: {
         marginTop: 10,
         marginBottom: 10,
-        height: (windowSize.height * .25)
+        flex: .25
     },
     inputPassword: {
         marginLeft: 15,
