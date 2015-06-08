@@ -22,13 +22,13 @@ var Login1 = React.createClass({
   render: function() {
     return (
         <View style={styles.container}>
-            <Image style={styles.bg} source={require('image!login1_bg')} />
+            <Image style={styles.bg} source={{uri: 'http://i.imgur.com/xlQ56UK.jpg'}} />
             <View style={styles.header}>
-                <Image style={styles.mark} source={require('image!login1_mark')} />
+                <Image style={styles.mark} source={{uri: 'http://i.imgur.com/da4G0Io.png'}} />
             </View>
             <View style={styles.inputs}>
                 <View style={styles.inputContainer}>
-                    <Image style={styles.inputUsername} source={require('image!login1_person')}/>
+                    <Image style={styles.inputUsername} source={{uri: 'http://i.imgur.com/iVVVMRX.png'}}/>
                     <TextInput 
                         style={[styles.input, styles.whiteFont]}
                         placeholder="Username"
@@ -37,7 +37,7 @@ var Login1 = React.createClass({
                     />
                 </View>
                 <View style={styles.inputContainer}>
-                    <Image style={styles.inputPassword} source={require('image!login1_lock')}/>
+                    <Image style={styles.inputPassword} source={{uri: 'http://i.imgur.com/ON58SIG.png'}}/>
                     <TextInput
                         password={true}
                         style={[styles.input, styles.whiteFont]}
@@ -64,7 +64,8 @@ var Login1 = React.createClass({
 var styles = StyleSheet.create({
     container: {
       flexDirection: 'column',
-      flex: 1
+      flex: 1,
+      backgroundColor: 'transparent'
     },
     bg: {
         position: 'absolute',
@@ -76,7 +77,8 @@ var styles = StyleSheet.create({
     header: {
         justifyContent: 'center',
         alignItems: 'center',
-        flex: .5
+        flex: .5,
+        backgroundColor: 'transparent'
     },
     mark: {
         width: 150,
