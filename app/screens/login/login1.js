@@ -97,10 +97,12 @@ var styles = StyleSheet.create({
         height: (windowSize.height * .25)
     },
     inputPassword: {
+        marginLeft: 15,
         width: 20,
         height: 21
     },
     inputUsername: {
+      marginLeft: 15,
       width: 20,
       height: 20
     },
@@ -112,11 +114,11 @@ var styles = StyleSheet.create({
     },
     input: {
         position: 'absolute',
-        left: 45,
+        left: 61,
         top: 12,
         right: 0,
         height: 20,
-        fontSize: 12
+        fontSize: 14
     },
     forgotContainer: {
       alignItems: 'flex-end',
